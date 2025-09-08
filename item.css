@@ -1,0 +1,169 @@
+/* ******************** Grandmasters ******************** */
+.gm-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 40px;
+    color: white;
+    overflow: auto;
+    align-items: stretch;
+    gap: 200px;
+    height: 700px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.gm-card{
+    flex: 1 1 300px;
+    animation: slide-left 1.35s;
+    display: flex;
+    flex-direction: column;
+}
+
+.gm-card .description{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.gm-card .visual{
+    height: 65%;
+}
+
+.visual{
+    border:#f5ebde;
+    border-width: 8px 8px 0px 8px;
+    border-style: groove;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.towers-link{
+    color: #dabc97;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.towers-link:hover{
+    color: #e6a351;
+}
+
+
+
+/* ******************** Tower Description ******************** */
+.tower-info{
+    margin: 0px auto;
+    width: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    animation: slide-up 1.35s;
+    overflow: auto;
+}
+
+.tower-info .visual {
+    height: 80%;
+    position: relative;
+}
+
+.visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px 22px 0px 0px;
+    opacity: 75%;
+}
+
+.visual h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-wrap: nowrap;
+}
+
+.description {
+    height: fit-content;
+    background-color: #2a3f32;
+    line-height: 150%;
+    border-radius: 0px 0px 22px 22px;
+    overflow: scroll;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.description ul{
+    margin: 0%;
+    padding: 25px 40px;
+}
+
+@keyframes slide-up{
+    0%{transform: translateY(100%); opacity: 0%;}
+    100%{transform: translateY(0%); opacity: 100%;}
+}
+
+/* ******************** Catalogue ******************** */
+#fort-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0px 40px;
+    gap: 40px;
+}
+
+.fortification{
+    position: relative;
+}
+
+.fortification img{
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.fortification a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-wrap: nowrap;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+/* ******************** Smaller Views ******************** */
+@media (max-width: 850px){
+    .tower-info{
+        width: 60%;
+    }
+    .gm-info{
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 1200px){
+    .gm-card .description{
+        font-size: xx-small;
+    }
+ 
+    .gm-info{
+        gap: 70px;
+        height: 450px;
+    }
+
+    
+}
+
+@media (max-width: 1650px){
+    .description li{
+        white-space: nowrap;
+    }    
+
+    .features{
+        position: absolute;
+        display: none;
+    }
+}

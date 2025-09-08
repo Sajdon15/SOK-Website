@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style = "background-image: url('images/bg.jpg'); background-size: 100% 100%;">
+        <div class = "site">
+            <!-- ******************** Navigation ******************** -->
+            <div id = "nav-bar">
+                <div id = "lhs">
+                    <img src = "images/logo.png">
+                    <p>The Fortifications of the Knights of St. John</p>
+                </div>       
+                <nav id = "main-nav">
+                    <a href = "home.html">Home</a>
+                    <a href = "catalogue.html">Harbours</a>
+                    <a href = "catalogue.html">Coastal Towers</a>
+                    <a href = "">About Us</a>
+                </nav>
+            </div>
+
+            <div id = "intro">
+                <video controls poster = "images/poster.jpg" id = "introVideo">
+                    <source src = "videos/towers_video.mp4">
+                </video>
+                <p>Defensive power was almost inexistent at the time of arrival of the 
+                    Knights. The Order saw defence and protection of utmost 
+                    importance due to other powers becoming interested in Malta. Firstly, they saw to the protection of the 
+                    harbours by building numerous forts and fortifying
+                    Fort St Angelo. Later, it came to their knowledge the need 
+                    of fortifying the naked coastline from which pirates could easily
+                    enter and embark. In the 17th century
+                    the Grandmasters Wignacourt, Lascaris and De Redin self-financed
+                        the building of several coastal watchtowers.</p>
+            </div>
+
+            <section class = "choice">
+                <div class = "harbours">
+                    <a onmouseenter="rotate('bg1')" onmouseleave="normal('bg1')" href = "catalogue.html">Harbours</a>
+                    <img id = "bg1" src = "images/bg1.jpg">
+                </div>
+
+                <div class = "towers">
+                    <a onmouseenter="rotate('bg2')" onmouseleave="normal('bg2')" href = "grandmasters.html">Coastal Towers</a>
+                    <img id = "bg2" src = "images/bg2.jpg">
+                </div>
+            </section>
+            
+            <footer>
+                <p>INNOVA
+                </p>
+                <div id = "centre">
+                    <img src = "images/brandLogo.png">
+                </div>                
+                <div id = "socials">
+                    <a href = "https://www.facebook.com/share/1VEmkJiEHw/"><img  src = "images/fb.png"></a>
+                    <a href = "https://www.instagram.com/kurtsaid08/"><img  src = "images/insta.png"></a>
+                </div>
+            </footer>
+        </div>   
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

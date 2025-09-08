@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catalogue</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/item.css">
+    </head>
+    <body style = "background-image: url('images/bg.jpg'); background-size: 100% 100%;">
+        <div class = "site">
+            <!-- ******************** Navigation ******************** -->
+            <div id = "nav-bar">
+                <div id = "lhs">
+                    <img src = "images/logo.png">
+                    <p>The Fortifications of the Knights of St. John</p>
+                </div>       
+                <nav id = "main-nav">
+                    <a href = "home.html">Home</a>
+                    <a href = "catalogue.html">Harbours</a>
+                    <a href = "catalogue.html">Coastal Towers</a>
+                    <a href = "">About Us</a>
+                </nav>
+            </div>
+
+            <section id = "fort-grid">
+                <div onmouseover="uncover(0)" onmouseleave="cover(0)" class = "fortification">
+                    <img src = "images/agatha1.jpg">
+                    <a href = "tower.html">St. Agatha's Tower</a>
+                </div>
+
+                <div onmouseover="uncover(1)" onmouseleave="cover(1)" class = "fortification">
+                    <img src = "images/delimara1.jpg">
+                    <a href = "tower.html">Delimara Tower</a>
+                </div>
+                
+                <div onmouseover="uncover(2)" onmouseleave="cover(2)" class = "fortification">
+                    <img src = "images/sciuta1.jpg">
+                    <a href = "tower.html">Sciuta Tower</a>
+                </div>
+
+                <div onmouseover="uncover(3)" onmouseleave="cover(3)" class = "fortification">
+                    <img src = "images/ghallis1.jpg">
+                    <a href = "tower.html">Għallis Tower</a>
+                </div>
+
+                <div onmouseover="uncover(4)" onmouseleave="cover(4)" class = "fortification">
+                    <img src = "images/julian1.jpg">
+                    <a href = "tower.html">St. Julian's Tower</a>
+                </div>
+
+                <div onmouseover="uncover(5)" onmouseleave="cover(5)" class = "fortification">
+                    <img src = "images/hamrija1.jpg">
+                    <a href = "tower.html">Ħamrija Tower</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>INNOVA
+                </p>
+                <div id = "centre">
+                    <img src = "images/brandLogo.png">
+                </div>                
+                <div id = "socials">
+                    <a href = "https://www.facebook.com/share/1VEmkJiEHw/"><img  src = "images/fb.png"></a>
+                    <a href = "https://www.instagram.com/kurtsaid08/"><img  src = "images/insta.png"></a>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
